@@ -2,10 +2,12 @@ def sort_list(unsortedList):
     #obtain length of the list
     n = len(unsortedList)
     if n == 0:
-        return "List is empty"
+        #return "List is empty"
+        return None
     
     if (isinstance(unsortedList[0], int) != True) and (isinstance(unsortedList[0], float) != True):
-         return "List must be of type int or float"
+         #return "List must be of type int or float"
+         return None
 
     #initialize outer loop control variable
     i = 0
