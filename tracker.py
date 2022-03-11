@@ -1,6 +1,6 @@
 def func_counter(some_func):
-    def counter_func(y):
-        some_func(y)
+    def counter_func(*y):
+        some_func(*y)
         counter_func.counter = counter_func.counter + 1
 
     counter_func.counter = 0
