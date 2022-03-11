@@ -1,6 +1,4 @@
 import string
-import operator
-from collections import OrderedDict
 
 f = open("document.txt", encoding = "utf8")
 
