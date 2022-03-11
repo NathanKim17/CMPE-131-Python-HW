@@ -12,7 +12,7 @@ for line in f:
     #removing whitespace
     line = line.strip()
     #converting all the words to lowercase
-    line = line.lower()
+    #line = line.lower()
     #defining a new list containing all the words
     wordsList = line.split()
 
@@ -25,8 +25,9 @@ for line in f:
         else:
             wordFreqDT[word] = 1
 
-    sortedDict = dict(sorted(wordFreqDT.items(), key=operator.itemgetter(1),reverse=True))
-
+    #sortedDict = dict(sorted(wordFreqDT.items(), key=operator.itemgetter(1),reverse=True))
+    sortedDict = dict(sorted(wordFreqDT.items(), key = lambda x:(-x[1],x[0])))
+    print(" ")
     i = 0
     for key in sortedDict:
         if i < 5:
