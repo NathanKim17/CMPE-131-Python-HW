@@ -7,7 +7,7 @@ def sort_list(unsortedList):
     
     if (isinstance(unsortedList[0], int) != True) and (isinstance(unsortedList[0], float) != True):
          #return "List must be of type int or float"
-         return unsortedList.sort()
+         return sorted(unsortedList)
 
     #initialize outer loop control variable
     i = 0
@@ -29,9 +29,6 @@ def sort_list(unsortedList):
     return unsortedList
     
 
-uL = [3, 2, 56, -22, 5736, 23]
+uL = ['A', 'B', 'E', 'G', 'F']
 uL = sort_list(uL)
 print(uL)
-nullList = ["apple", "gaga"]
-nullList = sort_list(nullList)
-print(nullList)
