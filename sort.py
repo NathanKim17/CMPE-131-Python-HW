@@ -3,11 +3,11 @@ def sort_list(unsortedList):
     n = len(unsortedList)
     if n == 0:
         #return "List is empty"
-        return None
+        return unsortedList
     
     if (isinstance(unsortedList[0], int) != True) and (isinstance(unsortedList[0], float) != True):
          #return "List must be of type int or float"
-         return None
+         return unsortedList
 
     #initialize outer loop control variable
     i = 0
