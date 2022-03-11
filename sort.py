@@ -7,7 +7,7 @@ def sort_list(unsortedList):
     
     if (isinstance(unsortedList[0], int) != True) and (isinstance(unsortedList[0], float) != True):
          #return "List must be of type int or float"
-         return unsortedList
+         return unsortedList.sort()
 
     #initialize outer loop control variable
     i = 0
