@@ -31,7 +31,7 @@ for line in f:
     i = 0
     for key in sortedDict:
         if i < 5:
-            print(key, ": ", sortedDict[key])
+            print(key, ":", sortedDict[key])
             i = i + 1
 
     
